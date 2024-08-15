@@ -2,7 +2,7 @@
 
 namespace Ars\Responder\Utils;
 
-use Illuminate\Http\Response as JsonResponse;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
