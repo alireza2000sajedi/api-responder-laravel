@@ -2,7 +2,7 @@
 
 namespace Ars\Responder\Utils;
 
-use Illuminate\Http\Response;
+use Illuminate\Http\Response as JsonResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,9 +15,9 @@ class Responder
     /**
      * Prepare and return the response.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function respond(): Response
+    public function respond(): JsonResponse
     {
         $response = $this->data;
 
@@ -134,9 +134,9 @@ class Responder
      * Respond with created status.
      *
      * @param mixed $data
-     * @return Response
+     * @return JsonResponse
      */
-    public function created(mixed $data = []): Response
+    public function created(mixed $data = []): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_CREATED)->ok($data);
     }
@@ -145,9 +145,9 @@ class Responder
      * Respond with updated status.
      *
      * @param mixed $data
-     * @return Response
+     * @return JsonResponse
      */
-    public function updated(mixed $data = []): Response
+    public function updated(mixed $data = []): JsonResponse
     {
         return $this->ok($data);
     }
@@ -155,9 +155,9 @@ class Responder
     /**
      * Respond with deleted status.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function deleted(): Response
+    public function deleted(): JsonResponse
     {
         return $this->ok();
     }
@@ -165,9 +165,9 @@ class Responder
     /**
      * Respond with bad request status.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function badRequest(): Response
+    public function badRequest(): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_BAD_REQUEST)
             ->setMessage(__('responder::responder.bad_request'))
@@ -177,9 +177,9 @@ class Responder
     /**
      * Respond with not found status.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function notFound(): Response
+    public function notFound(): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_NOT_FOUND)
             ->setSuccess(false)
@@ -191,9 +191,9 @@ class Responder
      * Respond with internal server error status.
      *
      * @param mixed $exception
-     * @return Response
+     * @return JsonResponse
      */
-    public function internalError(mixed $exception = null): Response
+    public function internalError(mixed $exception = null): JsonResponse
     {
         if ($exception) {
             Log::error($exception);
@@ -207,9 +207,9 @@ class Responder
     /**
      * Respond with unauthorized status.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function unauthorized(): Response
+    public function unauthorized(): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_FORBIDDEN)
             ->setSuccess(false)
@@ -220,9 +220,9 @@ class Responder
     /**
      * Respond with unauthenticated status.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function unauthenticated(): Response
+    public function unauthenticated(): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_UNAUTHORIZED)
             ->setSuccess(false)
@@ -233,9 +233,9 @@ class Responder
     /**
      * Respond with too many requests status.
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function tooManyRequests(): Response
+    public function tooManyRequests(): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_TOO_MANY_REQUESTS)
             ->setSuccess(false)
@@ -247,9 +247,9 @@ class Responder
      * Respond with OK status.
      *
      * @param mixed $data
-     * @return Response
+     * @return JsonResponse
      */
-    public function ok(mixed $data = []): Response
+    public function ok(mixed $data = []): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_OK)
             ->setSuccess(true)
