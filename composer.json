@@ -10,7 +10,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ars\\Responder\\ResponderServiceProvider"
+                "Ars\\Responder\\Provider\\ResponderServiceProvider"
             ],
             "aliases": {
                 "Responder": "Ars\\Responder\\Facades\\Responder"
