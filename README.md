@@ -1,6 +1,6 @@
-# Api Responder - Laravel Response
+# API Responder - Laravel Response
 
-**ars/responder** is a PHP library designed to simplify the creation of standardized API responses. It provides an easy-to-use interface for managing API responses with common status codes and error messages, particularly suited for Laravel applications.
+**ars/responder** is a Laravel package designed to streamline the creation of standardized API responses. It provides a user-friendly interface for managing API responses, including common status codes and error messages, making API development in Laravel more efficient and consistent.
 
 ## Features
 
