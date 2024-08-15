@@ -6,6 +6,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Lang;
 
 class Responder
 {
@@ -101,6 +102,9 @@ class Responder
     public function setMessage(string $message): static
     {
         if (!isset($this->data['message'])) {
+            if (Lang::has("responder::responder.$message")){
+                $message = Lang::get("responder::responder.$message");
+            }
             $this->data['message'] = $message;
         }
         return $this;
@@ -138,7 +142,9 @@ class Responder
      */
     public function created(mixed $data = []): JsonResponse
     {
-        return $this->setStatusCode(Response::HTTP_CREATED)->ok($data);
+        return $this->setStatusCode(Response::HTTP_CREATED)
+            ->created('created')
+            ->ok($data);
     }
 
     /**
@@ -149,7 +155,8 @@ class Responder
      */
     public function updated(mixed $data = []): JsonResponse
     {
-        return $this->ok($data);
+        return $this->setMessage('updated')
+            ->ok($data);
     }
 
     /**
@@ -159,7 +166,8 @@ class Responder
      */
     public function deleted(): JsonResponse
     {
-        return $this->ok();
+        return $this->setMessage('deleted')
+            ->ok();
     }
 
     /**
@@ -170,7 +178,7 @@ class Responder
     public function badRequest(): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_BAD_REQUEST)
-            ->setMessage(__('responder::responder.bad_request'))
+            ->setMessage('bad_request')
             ->respond();
     }
 
@@ -183,7 +191,7 @@ class Responder
     {
         return $this->setStatusCode(Response::HTTP_NOT_FOUND)
             ->setSuccess(false)
-            ->setMessage(__('responder::responder.not_found'))
+            ->setMessage('not_found')
             ->respond();
     }
 
@@ -200,7 +208,7 @@ class Responder
         }
         return $this->setStatusCode(Response::HTTP_INTERNAL_SERVER_ERROR)
             ->setSuccess(false)
-            ->setMessage(__('responder::responder.internal_error'))
+            ->setMessage('internal_error')
             ->respond();
     }
 
@@ -213,7 +221,7 @@ class Responder
     {
         return $this->setStatusCode(Response::HTTP_FORBIDDEN)
             ->setSuccess(false)
-            ->setMessage(__('responder::responder.unauthorized'))
+            ->setMessage('unauthorized')
             ->respond();
     }
 
@@ -226,7 +234,7 @@ class Responder
     {
         return $this->setStatusCode(Response::HTTP_UNAUTHORIZED)
             ->setSuccess(false)
-            ->setMessage(__('responder::responder.unauthenticated'))
+            ->setMessage('unauthenticated')
             ->respond();
     }
 
@@ -239,7 +247,7 @@ class Responder
     {
         return $this->setStatusCode(Response::HTTP_TOO_MANY_REQUESTS)
             ->setSuccess(false)
-            ->setMessage(__('responder::responder.to_many_request'))
+            ->setMessage('to_many_request')
             ->respond();
     }
 
@@ -253,6 +261,7 @@ class Responder
     {
         return $this->setStatusCode(Response::HTTP_OK)
             ->setSuccess(true)
+            ->setMessage('success')
             ->setData($data)
             ->respond();
     }
