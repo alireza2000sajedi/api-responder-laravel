@@ -143,7 +143,7 @@ class Responder
     public function created(mixed $data = []): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_CREATED)
-            ->created('created')
+            ->setMessage('created')
             ->ok($data);
     }
 
