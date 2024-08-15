@@ -1,0 +1,45 @@
+{
+    "name": "ars/responder",
+    "description": "A library to simplify the creation of standardized API responses.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ars\\Responder\\ResponderServiceProvider"
+            ],
+            "aliases": {
+                "Responder": "Ars\\Responder\\Facades\\Responder"
+            }
+        }
+    },
+    "homepage": "https://github.com/alireza2000sajedi/Responder",
+    "authors": [
+        {
+            "name": "Alireza Sajedi",
+            "email": "alireza2000sajedi@gmail.com",
+            "homepage": "https://github.com/alireza2000sajedi",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ars\\Responder\\": "src/"
+        }
+    },
+    "keywords": [
+        "api",
+        "response",
+        "laravel",
+        "responder",
+        "http",
+        "rest",
+        "json",
+        "standardized",
+        "php"
+    ]
+}
