@@ -17,7 +17,7 @@
             }
         }
     },
-    "homepage": "https://github.com/alireza2000sajedi/Responder",
+    "homepage": "https://github.com/alireza2000sajedi/api-responder-laravel.git",
     "authors": [
         {
             "name": "Alireza Sajedi",
@@ -32,6 +32,8 @@
         }
     },
     "keywords": [
+        "api responder",
+        "laravel responder",
         "api",
         "response",
         "laravel",
