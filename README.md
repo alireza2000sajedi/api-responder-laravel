@@ -1,6 +1,6 @@
 # API Responder - Laravel Response
 
-**ars/responder** is a Laravel package designed to streamline the creation of standardized API responses. It provides a user-friendly interface for managing API responses, including common status codes and error messages, making API development in Laravel more efficient and consistent.
+**ars/api-responder-laravel** is a Laravel package designed to streamline the creation of standardized API responses. It provides a user-friendly interface for managing API responses, including common status codes and error messages, making API development in Laravel more efficient and consistent.
 
 ## Features
 
@@ -13,7 +13,7 @@
 You can install the library via Composer. Run the following command:
 
 ```bash
-composer require ars/responder
+composer require ars/api-responder-laravel
 ```
 # Usage
 ## Basic Response
