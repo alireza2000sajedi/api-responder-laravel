@@ -1,5 +1,5 @@
 {
-    "name": "ars/responder",
+    "name": "ars/api-responder-laravel",
     "description": "A library to simplify the creation of standardized API responses.",
     "type": "library",
     "license": "MIT",
