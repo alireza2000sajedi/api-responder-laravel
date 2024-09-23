@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static self created(array $data = [])
  * @method static self updated(array $data = [])
  * @method static self deleted()
- * @method static \Illuminate\Http\JsonResponse ok(array $data = [])
+ * @method static \Illuminate\Http\JsonResponse ok(mixed $data = [])
  * @method static \Illuminate\Http\JsonResponse paginate(mixed $data)
  * @method static self setLinks(array $links)
  * @method static self setMeta(array $meta)

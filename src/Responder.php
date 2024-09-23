@@ -268,7 +268,7 @@ class Responder
      * @param mixed $data
      * @return JsonResponse
      */
-    public function ok(array $data = []): JsonResponse
+    public function ok(mixed $data = []): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_OK)
             ->setSuccess(true)
