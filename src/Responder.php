@@ -268,13 +268,39 @@ class Responder
      * @param mixed $data
      * @return JsonResponse
      */
-    public function ok(mixed $data = []): JsonResponse
+    public function ok(array $data = []): JsonResponse
     {
         return $this->setStatusCode(Response::HTTP_OK)
             ->setSuccess(true)
             ->setMessage('success')
             ->setData($data)
             ->respond();
+    }
+
+    /**
+     * Respond paginate data.
+     *
+     * @param mixed $data
+     * @return JsonResponse
+     */
+    public function paginate(mixed $data): JsonResponse
+    {
+        $links = [
+            'next' => $data->nextPageUrl(),
+            'prev' => $data->previousPageUrl(),
+            'path' => $data->path(),
+        ];
+
+        $meta = [
+            'total'        => $data->total(),
+            'current_page' => $data->currentPage(),
+            'per_page'     => $data->perPage(),
+        ];
+
+        $items = $data->items();
+
+        return $this->setMeta($meta)->setLinks($links)->ok($items);
+
     }
 
     /**
