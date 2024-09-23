@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38fa5c6f-82a4-4135-b944-c780606e440a" name="Changes" comment="fix: Change package name">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Responder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/ResponderServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Responder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Responder.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php8.1\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2khG1EvfuWD0oRjoBY1zEB1OGln" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alire/OneDrive/Desktop/Me/Packages/Otp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alire\OneDrive\Desktop\Me\Packages\Responder" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38fa5c6f-82a4-4135-b944-c780606e440a" name="Changes" comment="" />
+      <created>1723728177635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723728177635</updated>
+      <workItem from="1723728178999" duration="8880000" />
+      <workItem from="1723738347214" duration="1492000" />
+      <workItem from="1723913451967" duration="696000" />
+      <workItem from="1724087351588" duration="484000" />
+      <workItem from="1724490033967" duration="791000" />
+      <workItem from="1724657016021" duration="167000" />
+      <workItem from="1724671936504" duration="22000" />
+      <workItem from="1724762443837" duration="92000" />
+      <workItem from="1724836519580" duration="2000" />
+      <workItem from="1724923707851" duration="3000" />
+      <workItem from="1724924392305" duration="3000" />
+      <workItem from="1724924413922" duration="365000" />
+      <workItem from="1727090007521" duration="342000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add lang files">
+      <option name="closed" value="true" />
+      <created>1723728268345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723728268345</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Add Responder">
+      <option name="closed" value="true" />
+      <created>1723728327581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723728327581</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: Add Provider and Facade">
+      <option name="closed" value="true" />
+      <created>1723728356307</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723728356307</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: provider name composer.json">
+      <option name="closed" value="true" />
+      <created>1723729996087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723729996087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: response type">
+      <option name="closed" value="true" />
+      <created>1723730959347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723730959347</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: response type">
+      <option name="closed" value="true" />
+      <created>1723731259019</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723731259019</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: response type">
+      <option name="closed" value="true" />
+      <created>1723732495601</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723732495601</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: response type">
+      <option name="closed" value="true" />
+      <created>1723733271777</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723733271777</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Add document">
+      <option name="closed" value="true" />
+      <created>1723737098714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723737098714</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: refactor lang">
+      <option name="closed" value="true" />
+      <created>1723737130232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723737130232</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: set message created">
+      <option name="closed" value="true" />
+      <created>1723738438550</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723738438550</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: Change package name">
+      <option name="closed" value="true" />
+      <created>1724087550160</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724087550160</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: Change package name">
+      <option name="closed" value="true" />
+      <created>1724087669828</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724087669828</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add lang files" />
+    <MESSAGE value="feat: Add Responder" />
+    <MESSAGE value="feat: Add Provider and Facade" />
+    <MESSAGE value="fix: provider name composer.json" />
+    <MESSAGE value="fix: response type" />
+    <MESSAGE value="feat: Add document" />
+    <MESSAGE value="feat: refactor lang" />
+    <MESSAGE value="fix: set message created" />
+    <MESSAGE value="fix: Change package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Change package name" />
+  </component>
+</project>

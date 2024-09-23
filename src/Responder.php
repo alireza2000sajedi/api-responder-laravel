@@ -1,12 +1,12 @@
 <?php
 
-namespace Ars\Responder\Utils;
+namespace Ars\Responder;
 
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Support\Facades\Lang;
 
 class Responder
 {
@@ -20,14 +20,25 @@ class Responder
      */
     public function respond(): JsonResponse
     {
-        $response = $this->data;
+        $response = [];
 
-        // Ensure 'data' and 'success' keys are always present
+        // Set success, message, and data fields first
+        if (isset($this->data['success'])) {
+            $response['success'] = $this->data['success'];
+        }
+        if (isset($this->data['message'])) {
+            $response['message'] = $this->data['message'];
+        }
         if (isset($this->data['data'])) {
             $response['data'] = $this->data['data'];
         }
-        if (isset($this->data['success'])) {
-            $response['success'] = $this->data['success'];
+
+        // Set meta and links fields after
+        if (isset($this->data['meta'])) {
+            $response['meta'] = $this->data['meta'];
+        }
+        if (isset($this->data['links'])) {
+            $response['links'] = $this->data['links'];
         }
 
         return response()->json($response, $this->statusCode);

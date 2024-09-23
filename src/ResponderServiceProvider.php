@@ -1,8 +1,7 @@
 <?php
 
-namespace Ars\Responder\Provider;
+namespace Ars\Responder;
 
-use Ars\Responder\Utils\Responder;
 use Illuminate\Support\ServiceProvider;
 
 class ResponderServiceProvider extends ServiceProvider
