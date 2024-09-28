@@ -19,7 +19,7 @@ class ResponderServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'responder');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'responder');
 
         $this->app->bind('responder', function () {
             return new Responder();
