@@ -270,8 +270,7 @@ class Responder
      */
     public function ok(mixed $data = []): JsonResponse
     {
-        return $this->setStatusCode(Response::HTTP_OK)
-            ->setSuccess(true)
+        return $this->setSuccess(true)
             ->setMessage('success')
             ->setData($data)
             ->respond();
